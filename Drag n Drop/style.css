@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: black;
+  font-size: 50px;
+}
+h1:hover {
+  color: rgb(146, 197, 146);
+  background-color: rgb(153, 147, 147);
+  border-radius: 15%;
+}
+
+body {
+  /* background-color: rgb(14, 13, 13); */
+  background-color: rgb(158, 141, 141);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.empty {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border: 3px solid white;
+  background: rgb(243, 217, 222);
+  border-radius: 5%;
+}
+
+.fill {
+  /* background-image: url("http://source.unsplash.com/random/200x200"); */
+  /* background-image: url("natali-hordiiuk-DTYJck7Amm8-unsplash.jpg"); */
+  background-image: url("1691433083075.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 195px;
+  width: 195px;
+  cursor: pointer;
+}
+
+/* JavaScript */
+.hovered {
+  background-color: rgb(146, 197, 146);
+  border: 3px dashed white;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
